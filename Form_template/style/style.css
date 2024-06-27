@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Обнуляет отступы и поля всех элементов и устанавливает модель расчета размеров элементов. */
+}
+
+.container{
+    width: 70%;
+    padding: 20px;
+    box-shadow: 0 0 15px 0 #3263cd;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Определяет стили для контейнера: ширина, внутренние отступы, тень, отступы, скругленные углы, блочная модель и направление флекс-контейнера. */
+}
+
+.header{
+    background-color: lightskyblue;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Определяет стили для заголовка: цвет фона, цвет текста, высота, блочная модель и выравнивание содержимого по центру. */
+}
+
+h1{
+    font-size: 4em;
+    /* 1em - 16px */
+    width: 40%;
+    text-align: center;
+    /* Определяет стили для заголовка h1: размер шрифта, ширина и выравнивание текста по центру. */
+}
+
+input, label, select, textarea{
+    display: block;
+    width: 100%;
+    /* Устанавливает блочное отображение и полную ширину для элементов формы. */
+}
+
+input, label, p, textarea, select{
+    margin: 10px 0;
+    /* Устанавливает отступы для элементов формы и текста. */
+}
+
+input, textarea, select{
+    border: 1px solid lightgrey;
+    padding: 8px;
+    border-radius: 5px;
+    /* Устанавливает стили для полей ввода: рамка, внутренние отступы и скругленные углы. */
+}
+
+.chk input, .chk label, .radio input, .radio label{
+    width: auto;
+    display: inline;
+    color: black;
+    /* Определяет стили для чекбоксов и радиокнопок: ширина, блочное отображение и цвет текста. */
+}
+
+label, p{
+    color: grey;
+    /* Устанавливает цвет текста для меток и абзацев. */
+}
+
+button{
+    background-color: #3263cd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 10%;
+    padding: 10px;
+    /* Определяет стили для кнопки: цвет фона, цвет текста, отсутствие рамки, скругленные углы, ширина и внутренние отступы. */
+}
+
+.btn{
+    text-align: center;
+    /* Выравнивает текст внутри контейнера кнопки по центру. */
+}
+
+input:focus{
+    color: blue;
+    /* Меняет цвет текста в поле ввода при фокусировке. */
+}
+
+p:hover, label:hover{
+    color: blue;
+    /* Меняет цвет текста абзацев и меток при наведении курсора. */
+}
+
+button:hover{
+    background-color: #3263cd3d;
+    color: #3263cd;
+    /* Меняет цвет фона и текста кнопки при наведении курсора. */
+}
