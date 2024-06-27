@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style/form.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Создает контейнер для содержимого страницы, используется для стилизации и структурирования. -->
+        <div class="header">
+            <!-- Создает заголовок страницы, используемый для размещения основного заголовка. -->
+            <h1>Tour Booking Form</h1>
+            <!-- Основной заголовок страницы. -->
+        </div>
+        <form action="">
+            <!-- Создает форму для ввода данных. Атрибут action обычно указывает, куда отправляются данные формы, здесь он пустой. -->
+            <div>
+                <p>Name</p>
+                <!-- Метка для ввода имени. -->
+                <input type="text" placeholder="First name">
+                <!-- Поле ввода текста для имени с текстом-подсказкой. -->
+                <input type="text" placeholder="Last name">
+                <!-- Поле ввода текста для фамилии с текстом-подсказкой. -->
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <!-- Метка для ввода email, связывается с полем ввода по id. -->
+                <input type="email" id="email" placeholder="name@mail.ru">
+                <!-- Поле ввода email с текстом-подсказкой и идентификатором id для связи с меткой. -->
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <!-- Метка для ввода телефона, связывается с полем ввода по id. -->
+                <input type="tel" id="phone" placeholder="### ### ####">
+                <!-- Поле ввода телефона с текстом-подсказкой и идентификатором id для связи с меткой. -->
+            </div>
+            <div>
+                <label for="visit">When are you planning to visit?</label>
+                <!-- Метка для ввода даты визита, связывается с полем ввода по id. -->
+                <input type="date" id="visit">
+                <!-- Поле ввода даты с идентификатором id для связи с меткой. -->
+            </div>
+            <div>
+                <label for="group">How many people are in your group?</label>
+                <!-- Метка для ввода количества людей в группе, связывается с полем ввода по id. -->
+                <input type="number" id="group">
+                <!-- Поле ввода числа с идентификатором id для связи с меткой. -->
+            </div>
+            <div>
+                <label for="tour">Which tour are you most interested in?</label>
+                <!-- Метка для выбора тура, связывается с полем выбора по id. -->
+                <select name="" id="tour">
+                    <!-- Выпадающий список для выбора тура с идентификатором id для связи с меткой. -->
+                    <option value="" disabled>*Please select*</option>
+                    <!-- Опция, которая не может быть выбрана, используется как заголовок. -->
+                    <option value="usa">USA</option>
+                    <!-- Опция для выбора тура в США. -->
+                    <option value="eu">Europe</option>
+                    <!-- Опция для выбора тура в Европу. -->
+                    <option value="as">Asia</option>
+                    <!-- Опция для выбора тура в Азию. -->
+                    <option value="uae">UAE</option>
+                    <!-- Опция для выбора тура в ОАЭ. -->
+                </select>
+            </div>
+            <div class="chk">
+                <!-- Создает контейнер для группы чекбоксов, используется для стилизации. -->
+                <p>What is the best way to contact you?</p>
+                <!-- Вопрос для выбора предпочтительного способа связи. -->
+                <div>
+                    <input type="checkbox" id="chk1">
+                    <!-- Чекбокс для выбора способа связи по телефону. -->
+                    <label for="chk1">Phone</label>
+                    <!-- Метка для чекбокса, связывается по id. -->
+                </div>
+                <div>
+                    <input type="checkbox" id="chk2">
+                    <!-- Чекбокс для выбора способа связи по email. -->
+                    <label for="chk2">Email</label>
+                    <!-- Метка для чекбокса, связывается по id. -->
+                </div>
+                <div>
+                    <input type="checkbox" id="chk3">
+                    <!-- Чекбокс для выбора любого способа связи. -->
+                    <label for="chk3">Either</label>
+                    <!-- Метка для чекбокса, связывается по id. -->
+                </div>
+            </div>
+            <div class="radio">
+                <!-- Создает контейнер для группы радиокнопок, используется для стилизации. -->
+                <p>If phone, when is the best time of day for a call-back?</p>
+                <!-- Вопрос для выбора лучшего времени для звонка. -->
+                <div>
+                    <input type="radio" id="rd1" name="time">
+                    <!-- Радиокнопка для выбора времени с идентификатором id и именем группы name, что позволяет выбрать только одну из группы. -->
+                    <label for="rd1"> 8 - 11 AM </label>
+                    <!-- Метка для радиокнопки, связывается по id. -->
+                </div>
+                <div>
+                    <input type="radio" id="rd2" name="time">
+                    <!-- Радиокнопка для выбора времени с идентификатором id и именем группы name. -->
+                    <label for="rd2"> 12 - 4 PM </label>
+                    <!-- Метка для радиокнопки, связывается по id. -->
+                </div>
+                <div>
+                    <input type="radio" id="rd3" name="time">
+                    <!-- Радиокнопка для выбора времени с идентификатором id и именем группы name. -->
+                    <label for="rd3"> 6 - 10 PM </label>
+                    <!-- Метка для радиокнопки, связывается по id. -->
+                </div>
+            </div>
+            <div>
+                <label for="text">Anything else we should know?</label>
+                <!-- Метка для текстового поля, связывается с ним по id. -->
+                <textarea id="text"></textarea>
+                <!-- Текстовое поле для ввода дополнительных данных с идентификатором id для связи с меткой. -->
+            </div>
+            <div class="btn">
+                <!-- Создает контейнер для кнопки отправки формы, используется для стилизации. -->
+                <button type="submit">Send</button>
+                <!-- Кнопка отправки формы. -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>
